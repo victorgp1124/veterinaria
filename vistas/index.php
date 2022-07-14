@@ -22,7 +22,7 @@
     </section>
     <section class="veterinary">
         <label for="veterinary-login">Soy veterinario</label>
-        <a href="/veterinariaa/vistas/admin/admin.html">sign in</a>
+        <a href="/veterinariaa/vistas/admin/admin.php">sign in</a>
     </section>
 
     <div class="modal fade" id="windowModal" tabindex="-1" role="dialog" aria-labelledby="titleWindow" aria-hidden="true">

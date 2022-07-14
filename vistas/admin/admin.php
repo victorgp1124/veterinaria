@@ -22,10 +22,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
-            </svg><a href="/veterinariaa/vistas/index.html">Admin</a>
+            </svg><a href="/veterinariaa/vistas/index.php">Admin</a>
         </div>
         <div class="bootom">
-            <button type="button" class="btn btn-primary" data-toggle="modal" id="button-addon2" data-target="#windowModal3">Crear nueva mascota</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" id="button-addon2" data-target="#windowModal3">Crear Detalles</button>
         </div>
         <!--<div class="out">
             <a class="link" href="Eliminar">Cerrar Sesion</a> 
@@ -49,7 +49,7 @@
             </div>
             <div class="bo">
                 <button type="button" class="btn btn-secondary" data-toggle="modal" id="button-addon2" data-target="#windowModal">ver detalles</button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" id="button-addon2" data-target="#windowModal2">actualizar</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" id="button-addon2" data-target="#windowModal2">Modificar</button>
                 <button type="button" class="btn btn-danger">eliminar</button>
             </div>
         </div>
@@ -138,7 +138,7 @@
             <div class="modal-content">
                 <form action="">
                     <div class="modal-header">
-                        <h5 class="titleWindow">Historial Clinico</h5>
+                        <h5 class="titleWindow">Modificar Detalles de Historia</h5>
                         <button class="close" data-dismiss="modal" arial-label="Cerrar">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -146,23 +146,6 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <div class="update">
-                                <label for="historia clinica">historia clinica</label>
-                                <input type="text" class="form-control" id="id-pet" placeholder="id de la mascota">
-                                <input type="text" class="form-control" id="date" placeholder="fecha de creacion">
-                                <label for="mascota">mascota</label>
-                                <input type="text" class="form-control" id="nombre-mascota" placeholder="nombre de la mascota">
-                                <input type="text" class="form-control" id="raza" placeholder="raza de la mascota">
-                                <input type="text" class="form-control" id="id-usuario" placeholder="id del usuario">
-                                <input type="text" class="form-control" id="sexo-mascota" placeholder="sexo de la mascota">
-                                <label for="usuario">usuario</label>
-                                <input type="text" class="form-control" id="nombre-usuario" placeholder="nombre del usuario">
-                                <input type="text" class="form-control" id="apellido" placeholder="apellido del usuario">
-                                <input type="text" class="form-control" id="tipo-documento" placeholder="tipo de documento">
-                                <input type="text" class="form-control" id="documento-identificacion" placeholder="documento">
-                                <input type="text" class="form-control" id="estado" placeholder="estado">
-                                <input type="text" class="form-control" id="sexo-usuario" placeholder="sexo del usuario">
-                            </div>
-                            <div class="update2">
                                 <label for="historia clinica">detalles de la historia clinica</label>
                                 <input type="text" class="form-control" id="temperatura" placeholder="temperatura de la mascota">
                                 <input type="text" class="form-control" id="peso" placeholder="peso de la mascota">
@@ -174,19 +157,12 @@
                                 <input type="text" class="form-control" id="observacion" placeholder="observacion">
                                 <input type="text" class="form-control" id="id-colaborador" placeholder="id del colaborador">
                                 <input type="text" class="form-control" id="id-historia-clinica" placeholder="id de la historia clinica">
-                                <label for="mascota">mascota</label>
-                                <input type="text" class="form-control" id="nombre-colaborador" placeholder="nombre del colaborador">
-                                <input type="text" class="form-control" id="apellido-colaborador" placeholder="apellido del colaborador">
-                                <input type="text" class="form-control" id="cargo" placeholder="cargo">
-                                <input type="text" class="form-control" id="especialidad" placeholder="especialidad">
-                                <input type="text" class="form-control" id="tipo-documento-colaborador" placeholder="tipo de documento del colaborador">
-                                <input type="text" class="form-control" id="documento-identificacion-colaborador" placeholder="documento de identificacion del colaborador">
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-primary" type="button" data-dismiss="modal">
-                            actualizar
+                            Modificar
                         </button>
                     </div>
                 </form>
@@ -199,30 +175,13 @@
             <div class="modal-content">
                 <form action="">
                     <div class="modal-header">
-                        <h5 class="titleWindow">Crear Nueva Mascota</h5>
+                        <h5 class="titleWindow">Crear Detalles de historia Clinica</h5>
                         <button class="close" data-dismiss="modal" arial-label="Cerrar">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <div class="update">
-                                <label for="historia clinica">historia clinica</label>
-                                <input type="text" class="form-control" id="id-pet" placeholder="id de la mascota">
-                                <input type="text" class="form-control" id="date" placeholder="fecha de creacion">
-                                <label for="mascota">mascota</label>
-                                <input type="text" class="form-control" id="nombre-mascota" placeholder="nombre de la mascota">
-                                <input type="text" class="form-control" id="raza" placeholder="raza de la mascota">
-                                <input type="text" class="form-control" id="id-usuario" placeholder="id del usuario">
-                                <input type="text" class="form-control" id="sexo-mascota" placeholder="sexo de la mascota">
-                                <label for="usuario">usuario</label>
-                                <input type="text" class="form-control" id="nombre-usuario" placeholder="nombre del usuario">
-                                <input type="text" class="form-control" id="apellido" placeholder="apellido del usuario">
-                                <input type="text" class="form-control" id="tipo-documento" placeholder="tipo de documento">
-                                <input type="text" class="form-control" id="documento-identificacion" placeholder="documento">
-                                <input type="text" class="form-control" id="estado" placeholder="estado">
-                                <input type="text" class="form-control" id="sexo-usuario" placeholder="sexo del usuario">
-                            </div>
                             <div class="update2">
                                 <label for="historia clinica">detalles de la historia clinica</label>
                                 <input type="text" class="form-control" id="temperatura" placeholder="temperatura de la mascota">
@@ -235,13 +194,6 @@
                                 <input type="text" class="form-control" id="observacion" placeholder="observacion">
                                 <input type="text" class="form-control" id="id-colaborador" placeholder="id del colaborador">
                                 <input type="text" class="form-control" id="id-historia-clinica" placeholder="id de la historia clinica">
-                                <label for="mascota">mascota</label>
-                                <input type="text" class="form-control" id="nombre-colaborador" placeholder="nombre del colaborador">
-                                <input type="text" class="form-control" id="apellido-colaborador" placeholder="apellido del colaborador">
-                                <input type="text" class="form-control" id="cargo" placeholder="cargo">
-                                <input type="text" class="form-control" id="especialidad" placeholder="especialidad">
-                                <input type="text" class="form-control" id="tipo-documento-colaborador" placeholder="tipo de documento del colaborador">
-                                <input type="text" class="form-control" id="documento-identificacion-colaborador" placeholder="documento de identificacion del colaborador">
                             </div>
                         </div>
                     </div>
