@@ -162,6 +162,12 @@ html {
   .form-group {
     display: flex;
   }
+
+  .tables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   /*media cueries para dimensiones de pantallas*/
 
