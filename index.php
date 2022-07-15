@@ -1,5 +1,5 @@
 <?php 
-    include("../../backend/conexion.php");
+    include("backend/conexion.php");
     $con=conectar();
 
     $sql="SELECT *  FROM detalle_historia_clinica";
@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="vistas/admin/admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Document</title>
@@ -70,8 +70,8 @@
                         <th><?php  echo $row['alimentacion']?></th>  
                         <th><?php  echo $row['habitad']?></th>  
                         <th><?php  echo $row['observacion']?></th>    
-                        <th><a href="update.php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a></th>
-                        <th><a href="../../backend/delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
+                        <th><a href="vistas/admin/update.php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a></th>
+                        <th><a href="backend/delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                     </tr>
                 <?php 
                     }
@@ -84,7 +84,7 @@
     <div class="modal fade" id="windowModal3" tabindex="-1" role="dialog" aria-labelledby="titleWindow" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form action="../../backend/create.php" method="POST">
+                <form action="backend/create.php" method="POST">
                     <div class="modal-header">
                         <h5 class="titleWindow">Crear Detalles de historia Clinica</h5>
                         <button class="close" data-dismiss="modal" arial-label="Cerrar">
